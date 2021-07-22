@@ -118,7 +118,7 @@
           <div class="col-12 col-lg-6 pe-lg-4 d-flex align-items-center">
             <a id="btn-video-yt" type="button" class="position-relative wow zoomIn" data-bs-toggle="modal" data-bs-target="#videoIndex">
               <img class="img-fluid" src="assets/images/video.png" alt="Youtube">
-              <img class="logo-video-youtube" src="assets/images/icons/logo-video-youtube.png" alt="Youtube">
+              <img class="logo-video-youtube" src="assets/images/icons/icon-yt.svg" alt="Youtube">
             </a>
           </div>
           <div class="col-12 col-lg-6 ps-lg-4 d-flex align-items-center">
@@ -224,7 +224,7 @@
                 <img src="assets/images/plato-comida.png" alt="plato de comida">
               </div>
             </div>
-            <div class="slide">
+            <div class="slide slide2">
               <div class="content-img">
                 <img src="assets/images/plato-comida.png" alt="plato de comida">
               </div>
@@ -759,16 +759,23 @@
         'disableScrolling': true,
       });
 
-      $('.slick-slide[data-slick-index="' + ($('.menu-img').slick('slickCurrentSlide') + 1) +'"]').addClass('zIndex1')
       $('.menu-img').on('afterChange', function(event, slick, currentSlide){
         $('.slick-slide').removeClass('zIndex1')
         $('.slick-slide[data-slick-index="' + ($('.menu-img').slick('slickCurrentSlide') + 1) +'"]').addClass('zIndex1')
+        // $('.slick-slide[data-slick-index="' + ($('.menu-img').slick('slickCurrentSlide') + 2) +'"]').addClass('opacity05')
+        // $('.slick-slide[data-slick-index="' + ($('.menu-img').slick('slickCurrentSlide') - 2) +'"]').addClass('opacity05')
       });
-      // $('.menu-img').on('beforeChange', function(event, slick, currentSlide){
-      //   $('.slick-slide').removeClass('opacity05')
-      //   $('.slick-slide[data-slick-index="' + ($('.menu-img').slick('slickCurrentSlide') + 3) +'"]').addClass('opacity05')
-      //   $('.slick-slide[data-slick-index="' + ($('.menu-img').slick('slickCurrentSlide') - 1) +'"]').addClass('opacity05')
-      // });
+
+      $('.menu-img').on('beforeChange', function(event, slick, currentSlide){
+        $('.slick-slide').removeClass('opacity05 zIndex1')
+        // $('.slick-slide[data-slick-index="' + ($('.menu-img').slick('slickCurrentSlide') + 3) +'"]').addClass('opacity05')
+        // $('.slick-slide[data-slick-index="' + ($('.menu-img').slick('slickCurrentSlide') - 1) +'"]').addClass('opacity05')
+        $('.slick-slide[data-slick-index="' + ($('.menu-img').slick('slickCurrentSlide') + 2) +'"]').addClass('zIndex1')
+      });
+      $('.slick-slide').removeClass('opacity05 zIndex1')
+      $('.slick-slide[data-slick-index="1"]').addClass('zIndex1')
+      // $('.slick-slide[data-slick-index="-2"]').addClass('opacity05')
+      // $('.slick-slide[data-slick-index="2"]').addClass('opacity05')
     });
     $(window).resize(function () {
       $(".menu-img .slick-slide").css("height", $(".menu-img .slick-slide").width());
