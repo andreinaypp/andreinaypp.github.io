@@ -259,8 +259,6 @@ html, body {
       padding: 1rem;
       background-color: #ffffff;
       border-radius: 50%; }
-      .section-welcome .items-dogs .circle-dogs img {
-        width: 90%; }
   .section-welcome .big-dog {
     text-align: center; }
     .section-welcome .big-dog img {
@@ -503,7 +501,8 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    text-decoration: none; }
     @media (min-width: 576px) {
       .section-prueba .circle-prueba {
         height: 200px;
