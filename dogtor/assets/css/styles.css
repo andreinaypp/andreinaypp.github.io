@@ -224,6 +224,7 @@ html, body {
 .section-welcome {
   background-image: url("../images/welcome/bg-welcome.png");
   background-size: cover;
+  background-position: bottom center;
   padding-top: calc(135px + 1rem);
   padding-bottom: 5rem; }
   @media (min-width: 1200px) {
