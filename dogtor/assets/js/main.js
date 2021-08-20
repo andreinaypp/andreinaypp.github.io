@@ -17,10 +17,10 @@ $(window).scroll(function () {
 });
 $(window).resize(function () {
   if ($(window).width() < 1200) {
-    $(".navbar").css("background-color", "#2d52a5");
+    $(".nav-transp .navbar").css("background-color", "#2d52a5");
   } else {
     if ($(window).scrollTop() < 100) {
-      $(".navbar").css("background-color", "transparent");
+      $(".nav-transp .navbar").css("background-color", "transparent");
     }
   }
 });
@@ -31,7 +31,7 @@ function changeColorNavbar() {
       height: "0px",
     });
     if ($(window).width() > 1200) {
-      $(".navbar").css("background-color", "#2d52a5");
+      $(".nav-transp .navbar").css("background-color", "#2d52a5");
     }
   } else {
     $("#pre-nav").css({
@@ -39,7 +39,7 @@ function changeColorNavbar() {
       height: "35px",
     });
     if ($(window).width() > 1200) {
-      $(".navbar").css("background-color", "transparent");
+      $(".nav-transp .navbar").css("background-color", "transparent");
     }
   }
 }

@@ -16,6 +16,10 @@ html, body {
   color: #5f5f5f;
   margin-bottom: 0; }
 
+.text-gray-light {
+  color: #c5bdbd;
+  margin-bottom: 0; }
+
 .text-blue {
   color: #2d52a5;
   font-weight: 500; }
@@ -94,7 +98,7 @@ html, body {
       #navbar #pre-nav {
         display: none; } }
   #navbar .navbar {
-    background-color: transparent;
+    background-color: #2d52a5;
     transition: background-color 0.3s; }
     @media (max-width: 1199.98px) {
       #navbar .navbar {
