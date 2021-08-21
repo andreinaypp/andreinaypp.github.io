@@ -100,38 +100,41 @@ html, body {
       border-radius: 0px; }
       .section-tabs .nav-pills .nav-link.active {
         background-color: transparent;
-        border-bottom: 1.5px solid #f7d054; }
-  .section-tabs .tab-content {
+        border-bottom: 1.5px solid #f7d054;
+        color: #f7d054; }
+      .section-tabs .nav-pills .nav-link:hover {
+        color: #f7d054; }
+  .section-tabs .tab-pane {
     position: relative; }
-    .section-tabs .tab-content .content-tab {
+    .section-tabs .tab-pane .content-tab {
       background-color: #F2F2F2;
       border-radius: 25px; }
-    .section-tabs .tab-content .content-img img {
+    .section-tabs .tab-pane .content-img img {
       border-top-left-radius: 25px;
       border-top-right-radius: 25px; }
-    .section-tabs .tab-content .btn-categoria {
+    .section-tabs .tab-pane .btn-categoria {
       position: absolute;
       top: 0;
       right: 0;
       transform: translateX(-15%) translateY(-15%); }
       @media (max-width: 767px) {
-        .section-tabs .tab-content .btn-categoria {
+        .section-tabs .tab-pane .btn-categoria {
           width: 15%; } }
-    .section-tabs .tab-content .compartir-redes {
+    .section-tabs .tab-pane .compartir-redes {
       background-color: #F2F2F2;
       border-radius: 50px;
       display: flex;
       align-items: center; }
-      .section-tabs .tab-content .compartir-redes ul {
+      .section-tabs .tab-pane .compartir-redes ul {
         display: flex;
         align-items: center;
         list-style: none;
         margin-bottom: 0; }
-        .section-tabs .tab-content .compartir-redes ul li {
+        .section-tabs .tab-pane .compartir-redes ul li {
           transition: all .3s;
           padding: 0 1rem;
           cursor: pointer; }
-          .section-tabs .tab-content .compartir-redes ul li:hover {
+          .section-tabs .tab-pane .compartir-redes ul li:hover {
             transform: scale(1.1); }
 
 .section-articulos-relac {
@@ -141,59 +144,69 @@ html, body {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 0; }
-  .section-articulos-relac .articulos-relacionados .img-slide {
-    position: relative; }
-  .section-articulos-relac .articulos-relacionados .btn-categ {
-    position: absolute;
-    width: 50px;
-    top: 0;
-    transform: translateY(15%);
-    opacity: 0;
-    transition: all .3s; }
   .section-articulos-relac .articulos-relacionados .slick-slide {
-    margin: 0 1rem;
-    padding: 1rem;
+    margin: 0 1rem; }
+  .section-articulos-relac .articulos-relacionados .slide {
+    position: relative;
+    padding: 0 1rem;
     border-radius: 25px;
     transition: all .3s; }
-    .section-articulos-relac .articulos-relacionados .slick-slide:hover {
+    .section-articulos-relac .articulos-relacionados .slide:hover {
       background-color: #F2F2F2; }
-      .section-articulos-relac .articulos-relacionados .slick-slide:hover .btn-categ {
+      .section-articulos-relac .articulos-relacionados .slide:hover .content-slide .read-more {
+        color: #f7d054; }
+      .section-articulos-relac .articulos-relacionados .slide:hover .btn-categ {
         opacity: 1; }
+    .section-articulos-relac .articulos-relacionados .slide a {
+      text-decoration: none; }
+      .section-articulos-relac .articulos-relacionados .slide a:focus {
+        outline: none; }
+    .section-articulos-relac .articulos-relacionados .slide .btn-categ {
+      position: absolute;
+      width: 70px;
+      top: 0;
+      transform: translateX(-10%) translateY(15%);
+      opacity: 0;
+      transition: all .3s; }
+    .section-articulos-relac .articulos-relacionados .slide .content-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .section-articulos-relac .articulos-relacionados .slide .content-slide .text-slide {
+        color: #2d52a5;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0; }
+      .section-articulos-relac .articulos-relacionados .slide .content-slide .descrip-slide {
+        color: #5f5f5f;
+        font-size: .8rem;
+        margin-bottom: 0; }
+      .section-articulos-relac .articulos-relacionados .slide .content-slide .read-more {
+        color: #2d52a5;
+        font-size: .8rem;
+        margin-bottom: 0;
+        margin-top: .5rem;
+        transition: all .3s; }
   .section-articulos-relac .articulos-relacionados .slick-next {
     width: 40px;
     right: -40px;
-    transform: translateY(-100%); }
+    transform: translateY(-100%);
+    opacity: 0.4;
+    transition: all .3s; }
+    .section-articulos-relac .articulos-relacionados .slick-next:hover {
+      opacity: 1; }
   .section-articulos-relac .articulos-relacionados .slick-prev {
     left: -40px;
     width: 40px;
     z-index: 1;
-    transform: translateY(-100%); }
+    transform: translateY(-100%);
+    opacity: 0.4;
+    transition: all .3s; }
+    .section-articulos-relac .articulos-relacionados .slick-prev:hover {
+      opacity: 1; }
   .section-articulos-relac .articulos-relacionados .slick-next:before,
   .section-articulos-relac .articulos-relacionados .slick-prev:before {
     display: none; }
-  .section-articulos-relac .articulos-relacionados .content-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .section-articulos-relac .articulos-relacionados .content-slide .text-slide {
-      color: #2d52a5;
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 0; }
-    .section-articulos-relac .articulos-relacionados .content-slide .descrip-slide {
-      color: #5f5f5f;
-      font-size: .8rem;
-      margin-bottom: 0; }
-    .section-articulos-relac .articulos-relacionados .content-slide .read-more {
-      color: #2d52a5;
-      font-size: .8rem;
-      margin-bottom: 0;
-      margin-top: .5rem;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all .3s; }
-      .section-articulos-relac .articulos-relacionados .content-slide .read-more:hover {
-        color: #f7d054; }
   .section-articulos-relac .btn-cargar {
     color: #ffffff;
     font-weight: 400;
