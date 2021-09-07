@@ -3,7 +3,7 @@ body {
   background-size: cover;
   overflow-y: auto;
   color: white;
-  height: 100vh; }
+  height: calc(100vh - 130px); }
   @media (min-width: 500px) and (max-width: 767.98px) {
     body {
       height: auto; } }
