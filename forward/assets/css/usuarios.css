@@ -25,35 +25,40 @@
           border-color: transparent;
           box-shadow: 0 0 0 2px #364540;
           color: rgba(221, 221, 255, 0.5); }
-  .body-usuarios .contenedor-usuarios {
-    margin: 0 2rem;
-    padding: .5rem;
-    background-color: #373D44;
-    border-radius: .7rem; }
-    .body-usuarios .contenedor-usuarios .item-usuarios {
+  .body-usuarios .contenedor-ppal {
+    height: 100%;
+    padding-bottom: 60px; }
+    .body-usuarios .contenedor-ppal .contenedor-usuarios {
+      margin: 0 2rem;
+      padding: .5rem;
+      background-color: #373D44;
+      border-radius: .7rem; }
+      .body-usuarios .contenedor-ppal .contenedor-usuarios a {
+        text-decoration: none; }
+      .body-usuarios .contenedor-ppal .contenedor-usuarios .item-usuarios {
+        display: flex;
+        align-items: center; }
+        .body-usuarios .contenedor-ppal .contenedor-usuarios .item-usuarios img {
+          width: 20%; }
+        .body-usuarios .contenedor-ppal .contenedor-usuarios .item-usuarios .text-usuarios p {
+          margin-bottom: 0;
+          padding-left: .5rem; }
+        .body-usuarios .contenedor-ppal .contenedor-usuarios .item-usuarios .text-usuarios .title-usuarios {
+          color: #fff; }
+        .body-usuarios .contenedor-ppal .contenedor-usuarios .item-usuarios .text-usuarios .descrip-usuarios {
+          color: rgba(221, 221, 255, 0.4); }
+    .body-usuarios .contenedor-ppal .red-circle {
+      background-color: #900;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
       display: flex;
-      align-items: center; }
-      .body-usuarios .contenedor-usuarios .item-usuarios img {
-        width: 20%; }
-      .body-usuarios .contenedor-usuarios .item-usuarios .text-usuarios p {
-        margin-bottom: 0;
-        padding-left: .5rem; }
-      .body-usuarios .contenedor-usuarios .item-usuarios .text-usuarios .title-usuarios {
-        color: #fff; }
-      .body-usuarios .contenedor-usuarios .item-usuarios .text-usuarios .descrip-usuarios {
-        color: rgba(221, 221, 255, 0.4); }
-  .body-usuarios .red-circle {
-    background-color: #900;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-50%) translateY(-50%); }
-    .body-usuarios .red-circle p {
-      color: #fff;
-      margin-bottom: 0; }
+      justify-content: center;
+      align-items: center;
+      transform: translateX(-50%) translateY(-115%); }
+      .body-usuarios .contenedor-ppal .red-circle p {
+        color: #fff;
+        margin-bottom: 0; }
