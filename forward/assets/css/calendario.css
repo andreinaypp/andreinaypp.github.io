@@ -2,7 +2,8 @@ body {
   background: url(../images/bg-calendar.png) no-repeat;
   background-size: cover;
   overflow-y: auto;
-  color: white; }
+  color: white;
+  height: 100vh; }
   @media (min-width: 500px) and (max-width: 767.98px) {
     body {
       height: auto; } }
