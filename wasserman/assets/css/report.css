@@ -1,7 +1,8 @@
 .body-report {
   overflow-y: auto;
   background: url(../images/bg-report.png) no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 100vh; }
   .body-report .contenedor-search {
     background-size: cover;
     padding: 70px 2rem 0 2rem;
@@ -31,7 +32,7 @@
           color: rgba(221, 221, 255, 0.5); }
   .body-report .contenedor {
     height: 100%;
-    margin-bottom: 70px; }
+    padding-bottom: 70px; }
     .body-report .contenedor .card {
       border-radius: 15px;
       border: none; }
