@@ -7999,7 +7999,7 @@ body {
   z-index: 1;
   transition: all .7s; }
   .menu-open .icon-close {
-    width: 40px;
+    width: 30px;
     position: absolute;
     top: 0;
     right: 0;
