@@ -31,7 +31,6 @@
           box-shadow: 0 0 0 2px #364540;
           color: rgba(221, 221, 255, 0.5); }
   .body-report .contenedor {
-    height: 100%;
     padding-bottom: 70px; }
     .body-report .contenedor .card {
       border-radius: 15px;
