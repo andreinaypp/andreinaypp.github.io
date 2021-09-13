@@ -23,7 +23,6 @@
         border-radius: .7rem;
         color: rgba(221, 221, 255, 0.5);
         font-size: .8rem;
-        margin-right: .7rem;
         padding: .6rem .8rem; }
         .body-items .contenedor-search .search .form-control:focus {
           background: #222a31;
@@ -47,11 +46,8 @@
         .body-items .contenedor .contenedor-items .items .text-items {
           width: 100%;
           text-align: center; }
-          .body-items .contenedor .contenedor-items .items .text-items p {
+          .body-items .contenedor .contenedor-items .items .text-items .title-items {
             margin-bottom: 0;
             padding-left: .5rem;
-            font-size: 1.2rem; }
-          .body-items .contenedor .contenedor-items .items .text-items .title-items {
+            font-size: 1.2rem;
             color: #E67330; }
-          .body-items .contenedor .contenedor-items .items .text-items .descrip-items {
-            color: rgba(221, 221, 255, 0.4); }
