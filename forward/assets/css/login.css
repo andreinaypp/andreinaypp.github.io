@@ -93,3 +93,5 @@
     .body-login .container .social {
       display: flex;
       justify-content: space-evenly; }
+      .body-login .container .social img {
+        height: 25px; }

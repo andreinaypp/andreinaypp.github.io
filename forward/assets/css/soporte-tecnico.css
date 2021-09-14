@@ -23,13 +23,13 @@
       line-height: 2;
       border-color: transparent;
       border-radius: .7rem;
-      color: rgba(221, 221, 255, 0.4);
+      color: rgba(221, 221, 255, 0.8);
       font-size: .8rem; }
       .body-soporte .contenedor-soporte .form-control:focus {
         background: #343b41;
         border-color: transparent;
         box-shadow: 0 0 0 2px #364540;
-        color: rgba(221, 221, 255, 0.4); }
+        color: rgba(221, 221, 255, 0.8); }
   .body-soporte .button {
     width: 100%;
     background: #990000;

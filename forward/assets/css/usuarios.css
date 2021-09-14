@@ -11,6 +11,8 @@
     .body-usuarios .contenedor-search .search {
       display: flex;
       align-items: center; }
+      .body-usuarios .contenedor-search .search img {
+        width: 25px; }
       .body-usuarios .contenedor-search .search .form-control {
         background: #222a31;
         line-height: 2;
@@ -59,6 +61,5 @@
       justify-content: center;
       align-items: center;
       transform: translateX(-50%) translateY(-115%); }
-      .body-usuarios .contenedor-ppal .red-circle p {
-        color: #fff;
-        margin-bottom: 0; }
+      .body-usuarios .contenedor-ppal .red-circle img {
+        width: 40%; }

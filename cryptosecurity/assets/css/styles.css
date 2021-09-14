@@ -8055,7 +8055,6 @@ html, body {
           padding-left: 1rem;
           padding-right: 1rem; } }
       #navbar .navbar .navbar-nav .nav-item .nav-link {
-        font-size: .8rem;
         color: white;
         font-weight: 600;
         border-bottom: 1px solid transparent;
@@ -8090,9 +8089,8 @@ html, body {
         #navbar .navbar .icons-perfil {
           width: 10vw;
           text-align: end; } }
-    @media (max-width: 991.98px) {
-      #navbar .navbar .navbar-collapse {
-        background-color: #022F45; } }
+    #navbar .navbar.bg-dark {
+      background-color: #022F45 !important; }
   #navbar .navbar-brand {
     font-size: 18px;
     padding-top: 5px;
@@ -8100,6 +8098,8 @@ html, body {
     @media (min-width: 1200px) {
       #navbar .navbar-brand {
         width: 25vw; } }
+    #navbar .navbar-brand .logo-navbar {
+      height: 30px; }
   #navbar #btn-shopping-cart {
     cursor: pointer; }
 
@@ -8108,13 +8108,10 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 50vh;
+  height: 80vh;
   position: relative;
   display: flex;
   align-items: center; }
-  @media (min-width: 992px) {
-    .banner-menu {
-      height: 80vh; } }
   .banner-menu .placa-banner {
     position: absolute;
     background-color: #213397aa;
@@ -8192,15 +8189,15 @@ html, body {
           opacity: .75;
           color: #385F8A; }
       .banner-menu .contenedor-slide .single-item .slick-next {
-        right: 15px;
+        right: 5px;
         z-index: 1; }
         .banner-menu .contenedor-slide .single-item .slick-next:before {
-          content: url("../images/arrow-right.png"); }
+          content: url("../images/arrow-right.svg"); }
       .banner-menu .contenedor-slide .single-item .slick-prev {
         z-index: 1;
         left: 5px; }
         .banner-menu .contenedor-slide .single-item .slick-prev:before {
-          content: url("../images/arrow-left.png"); }
+          content: url("../images/arrow-left.svg"); }
   .banner-menu .box {
     position: absolute;
     bottom: 0;
@@ -8282,9 +8279,9 @@ html, body {
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0px 0 10px -3px gray;
-        margin: 0 1.6rem;
-        flex: 0 0 50%; }
-        @media (min-width: 768px) {
+        margin: 0 .5rem;
+        flex: 0 0 40%; }
+        @media (min-width: 505px) and (max-width: 767.98px) {
           .section-tabs .tab-content .content-cards .items-cards {
             flex: 0 0 40%; } }
         @media (min-width: 992px) {
@@ -8292,9 +8289,14 @@ html, body {
             flex: 0 0 25%; } }
         .section-tabs .tab-content .content-cards .items-cards .title-card-tab {
           font-weight: bold;
-          font-size: 1.3rem; }
+          font-size: 1.2rem; }
         .section-tabs .tab-content .content-cards .items-cards img {
           width: 60%; }
+        .section-tabs .tab-content .content-cards .items-cards .btn-custom {
+          font-size: .9rem; }
+        .section-tabs .tab-content .content-cards .items-cards .btn-white-purple {
+          padding-left: 2rem;
+          padding-right: 2rem; }
   .section-tabs .current {
     display: inherit;
     font-weight: bold; }
@@ -8358,8 +8360,7 @@ html, body {
       width: 175px !important; }
       @media (max-width: 767.98px) {
         .section-contacto .contenedor-der .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-          width: 125px !important;
-          margin-left: 1rem; } }
+          width: 125px !important; } }
     .section-contacto .contenedor-der .dropdown-item.active, .section-contacto .contenedor-der .dropdown-item:active {
       color: #fff;
       text-decoration: none; }
@@ -8395,6 +8396,8 @@ html, body {
         .section-pagos .pagos .slide a img {
           margin: 0 auto;
           transition: all 0.3s; }
+  .section-pagos .btn-custom {
+    font-size: .9rem; }
 
 #redes {
   display: flex; }

@@ -7963,7 +7963,6 @@ body {
     width: 20px;
     height: 20px;
     font-size: .75em;
-    font-weight: 700;
     line-height: 1;
     color: #fff;
     border-radius: 50%;
@@ -7971,7 +7970,7 @@ body {
     padding: .25rem .4rem;
     top: 0;
     right: 0;
-    transform: translateY(-50%) translateX(50%);
+    transform: translateY(-30%) translateX(30%);
     display: flex;
     align-items: center;
     justify-content: center; }
