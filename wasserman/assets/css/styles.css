@@ -7950,13 +7950,11 @@ body {
   padding: 1rem;
   align-items: center;
   position: fixed;
-  top: 20px;
+  top: 0;
   left: 0px;
   right: 0;
-  height: 70px;
   transition: all .3s;
-  z-index: 1;
-  transform: translateX(15px); }
+  z-index: 1; }
   .menu .notificacion-icon {
     position: absolute;
     width: 20px;
@@ -7974,8 +7972,11 @@ body {
     align-items: center;
     justify-content: center; }
   .menu .img-logo {
-    width: 65%;
-    margin-left: 2rem; }
+    width: 60%;
+    margin-left: 1rem; }
+    @media (min-width: 500px) {
+      .menu .img-logo {
+        width: 40%; } }
   .menu .title {
     color: #fff;
     font-weight: bold;
