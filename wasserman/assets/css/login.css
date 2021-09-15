@@ -11,7 +11,7 @@
     .body-login .container .logo {
       text-align: center; }
       .body-login .container .logo img {
-        width: 70%; }
+        width: 85%; }
     .body-login .container .form-login {
       margin: auto;
       margin-bottom: 1rem; }
@@ -21,8 +21,8 @@
       .body-login .container .form-login .username {
         background-image: url(../images/user.png);
         background-repeat: no-repeat;
-        background-position: 15px;
-        background-size: 20px;
+        background-position: 10px;
+        background-size: 8%;
         border-color: #FC5C3E;
         text-align: center;
         border-radius: 10px;
@@ -37,8 +37,8 @@
           display: inline;
           background-image: url(../images/security.png);
           background-repeat: no-repeat;
-          background-position: 15px;
-          background-size: 20px;
+          background-position: 12px;
+          background-size: 7%;
           border-color: #FC5C3E;
           text-align: center;
           border-radius: 10px;
@@ -66,7 +66,7 @@
           transition: all .3s; }
       .body-login .container .form-login .button {
         width: 100%;
-        background: linear-gradient(to right, #fd5b3e 0, #ef5430 0, #ca642b 100%);
+        background: linear-gradient(to right, #e64528 0, #ce492b 0, #ef722c 100%);
         border-color: transparent;
         text-align: center;
         border-radius: 10px;

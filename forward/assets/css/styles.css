@@ -7959,9 +7959,8 @@ body {
     padding: .25rem .4rem;
     top: 0;
     transform: translateY(10px); }
-  .menu img {
-    height: 30px; }
   .menu .title {
+    text-align: center;
     color: #fff;
     font-weight: bold;
     margin: 0; }
@@ -8043,8 +8042,11 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-evenly; }
-      .menu-open .contenedor-menu .redes a img {
-        height: 20px; }
+      .menu-open .contenedor-menu .redes a {
+        display: flex;
+        justify-content: center; }
+        .menu-open .contenedor-menu .redes a img {
+          width: 80%; }
 
 nav {
   background: #17191d;
