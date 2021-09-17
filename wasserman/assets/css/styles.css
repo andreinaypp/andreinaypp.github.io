@@ -8000,7 +8000,7 @@ body {
   top: 0;
   left: -100%;
   width: 60%;
-  background-color: #FDF6F2bb;
+  background-color: #fdf6f2eb;
   height: calc(100% - 60px);
   overflow-y: auto;
   padding: 5rem 1rem 3rem 1rem;
@@ -8030,8 +8030,10 @@ body {
       padding-left: 0;
       list-style: none; }
       .menu-open .contenedor-menu ul li {
-        border-top: 1px solid #b3acac;
-        padding: .5rem 1rem; }
+        border-top: 1px solid #e2cdcd;
+        padding: 1rem; }
+        .menu-open .contenedor-menu ul li:nth-child(1) {
+          border-top: none; }
         .menu-open .contenedor-menu ul li a {
           text-decoration: none;
           color: #3e3f42;
