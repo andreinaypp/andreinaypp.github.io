@@ -431,124 +431,158 @@ html, body {
   #modal-suscribe .modal-body form a:hover {
     color: #90ccc6; }
 
-#menu-semanal .content-semanal {
-  background-image: url(../images/bg-footer.png);
-  background-repeat: repeat;
-  background-size: cover; }
-
-#menu-semanal .modal-header {
-  border-bottom: none;
+.content-semanal .header-menu {
+  display: flex;
   align-items: flex-end;
-  margin: 0 2rem; }
-  #menu-semanal .modal-header img {
+  justify-content: space-between;
+  margin: 0 2rem;
+  padding: 1rem 0; }
+  .content-semanal .header-menu img {
     width: 30%; }
-  #menu-semanal .modal-header h2 {
-    color: white;
+  .content-semanal .header-menu h2 {
+    color: #ffffff;
     text-align: center; }
-  #menu-semanal .modal-header .title-text p {
+    @media print {
+      .content-semanal .header-menu h2 {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
+  .content-semanal .header-menu .title-text p {
     margin-bottom: 0;
     color: white;
     text-align: end;
     font-size: 1.3rem;
     font-weight: bold; }
+    @media print {
+      .content-semanal .header-menu .title-text p {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
 
-#menu-semanal .modal-body {
+.content-semanal .menu-content {
   margin: 0 1rem; }
-  #menu-semanal .modal-body .contenedor-menu {
+  .content-semanal .menu-content .contenedor-menu {
     margin-top: 1rem;
     padding: .5rem 2rem;
     background-color: white; }
-    #menu-semanal .modal-body .contenedor-menu .title-card-menu {
-      font-size: 2.5rem; }
-  #menu-semanal .modal-body .primero {
-    background-image: url(../images/home/bg-menu.png);
+    .content-semanal .menu-content .contenedor-menu .title-card-menu {
+      font-size: 2rem;
+      margin-bottom: 0; }
+  .content-semanal .menu-content .primero {
     font-size: 1.5rem;
     padding: 0 1rem;
     color: white;
-    text-align: end;
-    border-radius: 10px; }
-  #menu-semanal .modal-body .descrip-menu-semanal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transform: translateX(60%); }
+    @media print {
+      .content-semanal .menu-content .primero {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
+  .content-semanal .menu-content .postre {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transform: translateX(67%); }
+    @media print {
+      .content-semanal .menu-content .postre {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
+  .content-semanal .menu-content .descrip-menu-semanal {
     padding: .3rem;
-    font-size: 1.2rem; }
-  #menu-semanal .modal-body .contenedor-footer {
+    font-size: 1rem; }
+    .content-semanal .menu-content .descrip-menu-semanal p:nth-child(2) {
+      margin-bottom: 0; }
+  .content-semanal .menu-content .contenedor-footer {
     margin-top: 2rem;
-    margin-bottom: 1rem;
-    background-image: url(../images/bg-footer.png);
-    padding: 0.5rem 1rem;
-    background-size: cover;
-    display: flex;
-    justify-content: space-between; }
-    #menu-semanal .modal-body .contenedor-footer p {
+    padding-bottom: 1rem; }
+    .content-semanal .menu-content .contenedor-footer .content-text {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 100%;
+      padding: 0 1rem; }
+      @media print {
+        .content-semanal .menu-content .contenedor-footer .content-text {
+          top: 0px; } }
+    .content-semanal .menu-content .contenedor-footer p {
       margin-bottom: 0; }
 
-#menu-diario .content-diario {
-  background-image: url(../images/bg-footer.png);
-  background-repeat: repeat;
-  background-size: cover; }
-
-#menu-diario .modal-header {
-  border-bottom: none;
+.content-diario .header-menu {
+  display: flex;
   align-items: flex-end;
-  margin: 0 2rem; }
-  #menu-diario .modal-header img {
+  justify-content: space-between;
+  margin: 0 2rem;
+  padding: 1rem 0; }
+  .content-diario .header-menu img {
     width: 30%; }
-  #menu-diario .modal-header h2 {
+  .content-diario .header-menu h2 {
     color: white;
     text-align: center; }
-  #menu-diario .modal-header .title-text p {
+    @media print {
+      .content-diario .header-menu h2 {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
+  .content-diario .header-menu .title-text p {
     margin-bottom: 0;
     color: white;
     text-align: end;
     font-size: 1.3rem;
     font-weight: bold; }
+    @media print {
+      .content-diario .header-menu .title-text p {
+        -webkit-print-color-adjust: exact;
+        /*economy | exact*/
+        color-adjust: exact; } }
 
-#menu-diario .modal-body {
-  margin: 0 1rem; }
-  #menu-diario .modal-body .contenedor-menu {
+.content-diario .menu-content {
+  margin: 0 1rem;
+  padding: 0 0 1rem 0; }
+  .content-diario .menu-content .contenedor-menu {
     display: flex;
     margin-top: 1rem;
-    padding: .5rem 2rem;
     background-color: white; }
-    #menu-diario .modal-body .contenedor-menu .items {
+    .content-diario .menu-content .contenedor-menu .items {
       position: relative;
       flex: 30%;
-      margin: 2rem; }
-      #menu-diario .modal-body .contenedor-menu .items .rectangle-1 {
+      margin: 1.5rem 1.5rem .5rem 1.5rem; }
+      .content-diario .menu-content .contenedor-menu .items .img-degradado {
         position: absolute;
-        text-align: end;
-        padding: .3rem .8rem;
-        color: #ffffff;
         width: 100%;
-        top: 15px;
-        background: linear-gradient(91.72deg, rgba(255, 255, 255, 0.3) 0%, #98A0EE 61%); }
-      #menu-diario .modal-body .contenedor-menu .items .rectangle-2 {
-        position: absolute;
-        text-align: end;
-        padding: .3rem .8rem;
-        color: #ffffff;
-        width: 100%;
-        top: 15px;
-        background: linear-gradient(91.72deg, rgba(255, 255, 255, 0.3) 0%, #EE6E7A 61%); }
-      #menu-diario .modal-body .contenedor-menu .items .rectangle-3 {
-        position: absolute;
-        text-align: end;
-        padding: .3rem .8rem;
-        color: #ffffff;
-        width: 100%;
-        top: 15px;
-        background: linear-gradient(91.72deg, rgba(255, 255, 255, 0.3) 0%, #D0B070 61%); }
-      #menu-diario .modal-body .contenedor-menu .items .descrip-menu-diario {
+        height: 100%;
+        top: 0;
+        transform: translateY(6%); }
+      .content-diario .menu-content .contenedor-menu .items .descrip-menu-diario {
         padding: .3rem;
-        font-size: 1.2rem; }
-  #menu-diario .modal-body .contenedor-footer {
+        font-size: .8rem; }
+  .content-diario .menu-content .contenedor-footer {
     margin-top: 2rem;
-    margin-bottom: 1rem;
-    background-image: url(../images/bg-footer.png);
-    padding: 0.5rem 1rem;
-    background-size: cover;
-    display: flex;
-    justify-content: space-between; }
-    #menu-diario .modal-body .contenedor-footer p {
+    margin-bottom: 1rem; }
+    .content-diario .menu-content .contenedor-footer .content-text {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 100%;
+      padding: 0 1rem; }
+      @media print {
+        .content-diario .menu-content .contenedor-footer .content-text {
+          top: 0px; } }
+    .content-diario .menu-content .contenedor-footer p {
       margin-bottom: 0; }
 
 #navbar {
