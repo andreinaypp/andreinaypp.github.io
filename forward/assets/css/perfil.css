@@ -43,7 +43,7 @@ body {
           margin-bottom: .5rem; }
       body .contenedor .profile-content .info-profile {
         border-top: 1px solid rgba(221, 221, 255, 0.2);
-        padding-top: .5rem; }
+        padding-top: 1rem; }
         body .contenedor .profile-content .info-profile .date-profile {
           width: 100%;
           display: flex;
@@ -54,6 +54,8 @@ body {
             flex: 0 0 20%;
             justify-content: center;
             margin-right: .5rem; }
+            body .contenedor .profile-content .info-profile .date-profile .content-img .item {
+              width: 65%; }
           body .contenedor .profile-content .info-profile .date-profile p {
             flex: 0 0 80%;
             display: inline;
