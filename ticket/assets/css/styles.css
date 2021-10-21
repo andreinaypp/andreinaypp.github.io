@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+.header {
+  padding-bottom: 15%;
+}
+.description-ticket {
+  padding: 20px;
+  display: flex;
+}
+.codigo {
+  display: flex;
+  flex: 0 0 10%;
+  align-items: center;
+}
+.codigo2 {
+  display: flex;
+  justify-content: end;
+  flex: 0 0 10%;
+  align-items: center;
+}
+.text-vertical {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+.content-text {
+  flex: 0 0 50%;
+}
+.content-text .title {
+  color: #1b1e6e;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.content-text p {
+  margin-bottom: .5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 30%;
+}
+.content-img {
+  padding: 7.5px 0;
+}
+.content-img img {
+  width: 100%;
+}
+.condiciones {
+  padding: 15px;
+  font-size: .8rem;
+}
