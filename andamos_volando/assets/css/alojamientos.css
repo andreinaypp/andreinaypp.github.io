@@ -116,13 +116,26 @@
     flex-direction: column;
     justify-content: center;
     border: 1px solid #d7d7d7; }
-    .section-alojamientos .detalles-hotel .calificacion {
-      position: relative; }
-    .section-alojamientos .detalles-hotel .text-notificacion {
-      position: absolute;
-      top: 5px;
-      left: 20px;
-      color: #ffffff; }
+    .section-alojamientos .detalles-hotel .valoracion .valor {
+      position: relative;
+      background-color: #7d428f;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-right: 1rem; }
+      .section-alojamientos .detalles-hotel .valoracion .valor:before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        left: -10px;
+        bottom: 0px;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #7d428f transparent;
+        transition-duration: .3s;
+        transition-property: transform; }
     .section-alojamientos .detalles-hotel .name-hotel {
       font-size: 1.5rem;
       font-weight: bold;
@@ -147,13 +160,8 @@
         font-weight: 700; }
     .section-alojamientos .price-hotel .descrip-reserva {
       margin-bottom: 0; }
-    .section-alojamientos .price-hotel .btn-reservar {
-      text-align: center;
+    .section-alojamientos .price-hotel .btn-violet-white {
+      font-size: .8rem;
       margin-top: 2rem; }
-      .section-alojamientos .price-hotel .btn-reservar .btn-violet {
-        background-color: #7d428f;
-        font-size: .8rem;
-        color: #ffffff;
-        font-weight: bold; }
 
 /*# sourceMappingURL=alojamientos.css.map */
