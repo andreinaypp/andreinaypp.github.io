@@ -21,7 +21,10 @@ html, body {
     max-width: 1500px; } }
 
 main {
-  padding-top: 126px; }
+  padding-top: 92px; }
+  @media (min-width: 992px) {
+    main {
+      padding-top: 126px; } }
 
 .box-colors .bg-yellow {
   background-color: #f8b300; }
@@ -48,8 +51,7 @@ main {
     background: #e8663f;
     border-radius: 5px; }
   .btn-white-orange:focus {
-    box-shadow: none;
-    color: white; }
+    box-shadow: none; }
 
 .btn-violet-white {
   color: white;
@@ -64,8 +66,7 @@ main {
     background: white;
     border-radius: 5px; }
   .btn-violet-white:focus {
-    box-shadow: none;
-    color: white; }
+    box-shadow: none; }
 
 .btn-center-out {
   transform: perspective(1px) translateZ(0);
@@ -84,7 +85,6 @@ main {
   transition-duration: 0.3s; }
 
 .btn-center-out:hover:before,
-.btn-center-out:focus:before,
 .btn-center-out:active:before {
   transform: scale(1.15); }
 
@@ -187,13 +187,19 @@ main {
       border-right: 1px solid #7d428f; }
     .searcher .tab-pane form label {
       color: #3a3a3a;
-      margin-left: 3rem;
       margin-bottom: 0; }
-    .searcher .tab-pane form .input-group .icon {
-      max-width: 2.5rem; }
+    .searcher .tab-pane form .icon {
+      width: 3.5rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .searcher .tab-pane form .icon img {
+        max-height: 3.5rem; }
     .searcher .tab-pane form .input-group input {
       border: none;
       color: #3a3a3a;
+      padding: 0.5rem 0;
       background-color: white; }
       .searcher .tab-pane form .input-group input:focus {
         box-shadow: none;
@@ -204,12 +210,76 @@ main {
         color: #3a3a3a; }
       .searcher .tab-pane form .input-group input::placeholder {
         color: #3a3a3a; }
+    .searcher .tab-pane form .input-group .icon-fa {
+      color: #7d428f; }
     .searcher .tab-pane form #submit {
       font-size: 1.5rem; }
+    .searcher .tab-pane #btn-habs .input-group {
+      align-items: center; }
+      .searcher .tab-pane #btn-habs .input-group input {
+        width: 20%;
+        text-align: center; }
+    .searcher .tab-pane #popover-habs {
+      position: absolute;
+      background-color: white;
+      padding: 1rem 0.5rem;
+      width: 300px;
+      border: 1px solid #7d428f;
+      border-radius: 5px;
+      z-index: 100;
+      opacity: 0;
+      transform: translateX(5000px);
+      transition: opacity 0.3s; }
+      .searcher .tab-pane #popover-habs.show {
+        transform: translateX(0);
+        opacity: 1; }
+      .searcher .tab-pane #popover-habs [class^='content-'] {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .searcher .tab-pane #popover-habs [class^='content-'] span {
+          font-size: 1rem; }
+      .searcher .tab-pane #popover-habs input.cantidad {
+        text-align: center;
+        border: none;
+        background: transparent;
+        margin: 0 0.5rem;
+        color: var(--primary-color);
+        font-size: 1rem;
+        width: 35px; }
+        @media (max-width: 500px) {
+          .searcher .tab-pane #popover-habs input.cantidad {
+            margin: 0; } }
+      .searcher .tab-pane #popover-habs input.cantidad:focus-visible {
+        outline: none; }
+      .searcher .tab-pane #popover-habs input.cantidad::-webkit-outer-spin-button,
+      .searcher .tab-pane #popover-habs input.cantidad::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
+      .searcher .tab-pane #popover-habs .mas,
+      .searcher .tab-pane #popover-habs .menos {
+        border-radius: 50px;
+        border: none;
+        background-color: #eee;
+        color: #7d428f;
+        font-size: 0.8rem; }
   .searcher .box-colors {
     position: absolute;
     bottom: -1rem;
     right: 0; }
+  .searcher .select2-container--default .select2-selection--single {
+    border: 1px solid transparent; }
+  .searcher .select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 0.5rem 0;
+    line-height: 1.5; }
+  .searcher .select2-container--default .select2-selection--single .select2-selection__arrow {
+    display: none; }
+  .searcher .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #7d428f;
+    color: white; }
+  .searcher .select2-container--classic .select2-selection--single:focus {
+    background-color: #7d428f;
+    color: white; }
 
 footer {
   background-color: #3a3a3a; }
