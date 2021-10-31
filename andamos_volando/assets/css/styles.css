@@ -206,14 +206,20 @@ main {
     .searcher .tab-pane form label {
       color: #3a3a3a;
       margin-bottom: 0; }
-    .searcher .tab-pane form .icon {
+    @media (max-width: 991.98px) {
+      .searcher .tab-pane form .line-horizontal {
+        border-bottom: 1px solid #7d428f;
+        padding: .7rem; } }
+    .searcher .tab-pane form .line-horizontal .icon {
       width: 3.5rem;
       text-align: center;
       display: flex;
       align-items: center;
       justify-content: center; }
-      .searcher .tab-pane form .icon img {
-        max-height: 3.5rem; }
+      .searcher .tab-pane form .line-horizontal .icon img {
+        max-height: 2.5rem; }
+    .searcher .tab-pane form label {
+      font-weight: bold; }
     .searcher .tab-pane form .input-group input {
       border: none;
       color: #3a3a3a;
@@ -251,11 +257,11 @@ main {
       .searcher .tab-pane #popover-habs.show {
         transform: translateX(0);
         opacity: 1; }
-      .searcher .tab-pane #popover-habs [class^='content-'] {
+      .searcher .tab-pane #popover-habs [class^='content-'], .searcher .tab-pane #popover-habs [class^='content-age'] {
         display: flex;
         align-items: center;
         justify-content: space-between; }
-        .searcher .tab-pane #popover-habs [class^='content-'] span {
+        .searcher .tab-pane #popover-habs [class^='content-'] span, .searcher .tab-pane #popover-habs [class^='content-age'] span {
           font-size: 1rem; }
       .searcher .tab-pane #popover-habs input.cantidad {
         text-align: center;

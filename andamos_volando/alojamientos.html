@@ -177,7 +177,7 @@
             <form action="" method="get">
               <div class="row">
                 <div class="col-12 col-lg-4 border-right">
-                  <div class="d-flex">
+                  <div class="line-horizontal d-flex">
                     <div class="icon">
                       <img class="img-fluid" src="assets/images/icons/location.png" alt=""/>
                     </div>
@@ -260,7 +260,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-3 border-right">
-                  <div class="d-flex">
+                  <div class="line-horizontal d-flex">
                     <div class="icon">
                       <img class="img-fluid" src="assets/images/icons/calendar.png" alt=""/>
                     </div>
@@ -273,7 +273,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-3">
-                  <div class="d-flex">
+                  <div class="line-horizontal d-flex">
                     <div class="icon">
                       <img class="img-fluid" src="assets/images/icons/person.png" alt=""/>
                     </div>
@@ -318,11 +318,11 @@
                           <div class="content-child1">
                             <span>Niños</span>
                             <div>
-                              <button class="menos">
+                              <button class="menos" onclick="less(1, this)">
                                 <i class="fa fa-minus"></i>
                               </button>
                               <input type="number" id="child1" data="persons" class="cantidad" min="0" max="8" step="1" value="0" readonly>
-                              <button class="mas">
+                              <button class="mas" onclick="mas(1, this)">
                                 <i class="fa fa-plus"></i>
                               </button>
                             </div>
@@ -336,7 +336,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-2 d-flex align-items-center">
+                <div class="col-12 col-lg-2 d-flex align-items-center pt-4">
                   <button type="submit" id="submit" class="btn btn-rounded-10 btn-white-orange btn-center-out w-100">Buscar</button>
                 </div>
               </div>
