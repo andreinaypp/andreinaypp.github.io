@@ -141,8 +141,23 @@ const mas = (param, _this) => {
     <span>Edad del menor</span>
     <div>
       <select name="" id="" class="form-select">
-        <option value="">Edad 1</option>
-        <option value="">Edad 2</option>
+        <option value="">1 año</option>
+        <option value="">2 años</option>
+        <option value="">3 años</option>
+        <option value="">4 años</option>
+        <option value="">5 años</option>
+        <option value="">6 años</option>
+        <option value="">7 años</option>
+        <option value="">8 años</option>
+        <option value="">9 años</option>
+        <option value="">10 años</option>
+        <option value="">11 años</option>
+        <option value="">12 años</option>
+        <option value="">13 años</option>
+        <option value="">14 años</option>
+        <option value="">15 años</option>
+        <option value="">16 años</option>
+        <option value="">17 años</option>
       </select>
     </div>
   </div>`;
