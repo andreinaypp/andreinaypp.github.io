@@ -115,7 +115,35 @@
   <main>
     <div class="searcher">
       <div class="container">
-        <ul class="nav nav-tabs" id="tabSearcher" role="tablist">
+        <div class="dropdown dropdown-search-mobile d-lg-none">
+          <button class="btn btn-dropdown-search dropdown-toggle w-100" type="button" id="dropdown-menu-search" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </button>
+          <ul class="nav dropdown-menu w-100" id="tabSearcher" role="tablist" aria-labelledby="dropdown-menu-search">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="Paquetes-tab" data-bs-toggle="tab" data-bs-target="#Paquetes" type="button" role="tab" aria-controls="Paquetes" aria-selected="false">Paquetes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="Vuelos-tab" data-bs-toggle="tab" data-bs-target="#Vuelos" type="button" role="tab" aria-controls="Vuelos" aria-selected="false">Vuelos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="Alojamientos-tab" data-bs-toggle="tab" data-bs-target="#Alojamientos" type="button" role="tab" aria-controls="Alojamientos" aria-selected="true">Alojamientos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="Actividades-tab" data-bs-toggle="tab" data-bs-target="#Actividades" type="button" role="tab" aria-controls="Actividades" aria-selected="false">Actividades</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="Traslados-tab" data-bs-toggle="tab" data-bs-target="#Traslados" type="button" role="tab" aria-controls="Traslados" aria-selected="false">Traslados</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="Seguros-tab" data-bs-toggle="tab" data-bs-target="#Seguros" type="button" role="tab" aria-controls="Seguros" aria-selected="false">Seguros</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="Autos-tab" data-bs-toggle="tab" data-bs-target="#Autos" type="button" role="tab" aria-controls="Autos" aria-selected="false">Autos</button>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav nav-tabs d-none d-lg-flex" id="tabSearcher" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="Paquetes-tab" data-bs-toggle="tab" data-bs-target="#Paquetes" type="button" role="tab" aria-controls="Paquetes" aria-selected="false">Paquetes</button>
           </li>

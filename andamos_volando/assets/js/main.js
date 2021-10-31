@@ -114,3 +114,11 @@ function createItemHabs(param) {
                 '<hr>' +
               '</div>'
 }
+$(document).ready(function () {
+  $('.dropdown-search-mobile .nav-link.active').each(function() {
+    $('#dropdown-menu-search').html($(this).html())
+  })
+})
+$('.dropdown-search-mobile .nav-link').on('click', function() {
+  $('#dropdown-menu-search').html($(this).html())
+})
