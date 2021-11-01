@@ -247,7 +247,7 @@ main {
       position: absolute;
       background-color: white;
       padding: 1rem 0.5rem;
-      width: 300px;
+      min-width: 250px;
       border: 1px solid #7d428f;
       border-radius: 5px;
       z-index: 100;

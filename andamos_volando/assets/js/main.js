@@ -92,7 +92,7 @@ function createItemHabs(param) {
     '<div class="content-adult' +
     param +
     '">' +
-    "<span>Adultos</span>" +
+    "<span class='me-3'>Adultos</span>" +
     "<div>" +
     '<button class="menos">' +
     '<i class="fa fa-minus"></i>' +
@@ -108,9 +108,11 @@ function createItemHabs(param) {
     '<div class="content-child' +
     param +
     '">' +
-    "<span>Niños</span>" +
+    "<span class='me-3'>Niños</span>" +
     "<div>" +
-    '<button class="menos">' +
+    '<button class="menos" onclick="less(' +
+    param +
+    ', this)">' +
     '<i class="fa fa-minus"></i>' +
     "</button>" +
     '<input type="number" id="child' +
@@ -138,7 +140,7 @@ $(".dropdown-search-mobile .nav-link").on("click", function () {
 const mas = (param, _this) => {
   const html = `
   <div class='content-age${param} py-2'>
-    <span>Edad del menor</span>
+    <span class="me-3">Edad del menor</span>
     <div>
       <select name="" id="" class="form-select">
         <option value="">1 año</option>
@@ -165,7 +167,7 @@ const mas = (param, _this) => {
 };
 
 const less = (param, _this) => {
-  if ($(".content-age1").length > 0) {
-    $(".content-age1").last().remove();
+  if ($(".content-age" + param).length > 0) {
+    $(".content-age" + param).last().remove();
   }
 };
