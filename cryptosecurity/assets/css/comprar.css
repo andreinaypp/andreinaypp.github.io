@@ -12,6 +12,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   color: white;
+  font-weight: bold;
   background: transparent;
   transition: all 0.3s;
   border: 1px solid white; }
@@ -67,12 +68,13 @@
   padding-left: 3rem;
   padding-right: 3rem;
   background: transparent;
-  transition: all 0.3s;
   border: 2px solid #6E60E7;
   color: #6E60E7;
-  font-weight: 700; }
+  font-weight: 700;
+  transition: color 0.3s, background 0.5s; }
   .btn-white-purple:hover {
-    color: #fff; }
+    color: #fff;
+    background: #6E60E7; }
   .btn-white-purple:before {
     background: #6E60E7;
     color: #fff;
@@ -276,7 +278,7 @@
       transition: all .3s; }
 
 .section-caracteristicas .tabs {
-  background: radial-gradient(ellipse at center, #2d3683 0%, #051723 100%);
+  background: radial-gradient(circle, #2d3683 0%, #051723 70%);
   padding: 0;
   list-style: none;
   position: relative;
@@ -285,6 +287,10 @@
   @media (min-width: 485px) {
     .section-caracteristicas .tabs {
       font-size: 1rem; } }
+  @media (min-width: 1200px) {
+    .section-caracteristicas .tabs {
+      font-size: 1.2rem;
+      font-weight: bold; } }
   .section-caracteristicas .tabs .active-tab {
     position: relative;
     color: #FEAC0B;
