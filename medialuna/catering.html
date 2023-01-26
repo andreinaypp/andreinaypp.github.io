@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catering - MediaLuna</title>
+  <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/fontawesome.min.css"> -->
+  <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick.css">
+  <link rel="stylesheet" href="assets/libs/slick-slider/slick/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/styles.min.css">
+
+</head>
+<body>
+  <div id="navbar">
+    <div id="pre-nav">
+      <div class="d-flex justify-content-end" style="font-size: 12px;">
+        <div class="d-none d-md-flex me-3">
+          <a href="https://goo.gl/maps/oNKYBN2FziLEDU5Q9">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Av. Pintor Felo Monzón 38, Siete Palmas, Las Palmas</span>
+          </a>
+        </div>
+        <a href="whatsapp://send?text=hola&amp;phone=828048232&amp;abid=+34615054511">
+          <i class="fab fa-whatsapp"></i>
+          <span class="roboto me-3">+34 615 05 45 11</span>
+        </a>
+        <a href="tel:+34828048232">
+          <i class="fas fa-phone-alt"></i>
+          <span>+34 828 04 82 32</span>
+        </a>
+      </div>
+    </div>
+  
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <div class="container-fluid h-100">
+        <a class="navbar-brand" href="./">
+          <img class="logo-navbar img-fluid" src="assets/images/logo.png" alt="Medialuna">
+          <span>La Cocina de Medialuna</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link py-xl-0 @@menu" href="menu.html">menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-xl-0 active" href="catering.html">catering</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-xl-0 @@tienda" href="tienda.html">tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-xl-0 @@nosotros" href="nosotros.html">nosotros</a>
+            </li>
+          </ul>
+          <div class="icons-perfil mt-3 mt-xl-0">
+            <a href="#">
+              <i class="ms-4 fas fa-search"></i>
+            </a>
+            <a href="#">
+              <i class="ms-4 fas fa-user-alt"></i>
+            </a>
+            <a id="btn-shopping-cart">
+              <i class="ms-4 me-4 fas fa-shopping-bag"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <link href="assets/css/catering.min.css" rel="stylesheet" />
+
+  <main>
+    <div class="section-welcome-catering">
+      <div class="content-text-catering">
+        <div class="container">
+          <div class="row text-catering">
+            <div class="col-12 col-md-6 col-left">
+              <p class="title-catering wow fadeInUp">catering</p>
+            </div>
+            <div class="col-12 col-md-6 col-right">
+              <p class="mb-0 wow fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus saepe tenetur, illo, omnis dolorum similique rerum officia fuga, magni doloremque corrupti nemo voluptas perferendis quisquam!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-dishes">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-12 col-sm-6">
+            <p class="mb-0">1-24 de 27 resultados</p>
+          </div>
+          <div class="col-12 col-sm-6 text-end mt-3 mt-sm-0">
+            <div class="filter btn-group" role="group">
+              <button type="button" class="label-filter-order btn py-0" disabled>Ordenar por:</button>
+              <div class="btn-group" role="group">
+                <button id="filter-order" type="button" class="btn dropdown-toggle py-0" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destacados<i class="fa fa-angle-down ms-3"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="filter-order">
+                  <li><a class="dropdown-item" href="#">Destacados</a></li>
+                  <li><a class="dropdown-item" href="#">Precio</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row content-cards-menu">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card text-center wow fadeInUp">
+              <div class="row">
+                <div class="col-6 col-md-12">
+                  <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Pescado en salsa verde</h5>
+                    <p class="card-text">10,00€</p>
+                    <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card text-center wow fadeInUp">
+              <div class="row">
+                <div class="col-6 col-md-12">
+                  <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Pescado en salsa verde</h5>
+                    <p class="card-text">10,00€</p>
+                    <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card text-center wow fadeInUp">
+              <div class="row">
+                <div class="col-6 col-md-12">
+                  <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Pescado en salsa verde</h5>
+                    <p class="card-text">10,00€</p>
+                    <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card text-center wow fadeInUp">
+              <div class="row">
+                <div class="col-6 col-md-12">
+                  <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Pescado en salsa verde</h5>
+                    <p class="card-text">10,00€</p>
+                    <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card text-center wow fadeInUp">
+              <div class="row">
+                <div class="col-6 col-md-12">
+                  <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Pescado en salsa verde</h5>
+                    <p class="card-text">10,00€</p>
+                    <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card text-center wow fadeInUp">
+              <div class="row">
+                <div class="col-6 col-md-12">
+                  <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                  <span class="text-triangulo">NUEVO</span>
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Pescado en salsa verde</h5>
+                    <p class="card-text">10,00€</p>
+                    <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card text-center wow fadeInUp">
+              <div class="row">
+                <div class="col-6 col-md-12">
+                  <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Pescado en salsa verde</h5>
+                    <p class="card-text">10,00€</p>
+                    <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="card text-center wow fadeInUp">
+              <div class="row">
+                <div class="col-6 col-md-12">
+                  <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+                  <img src="assets/images/home/triangulo.png" alt="Triangulo" class="triangulo">
+                  <span class="text-triangulo">NUEVO</span>
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="card-body">
+                    <h5 class="card-title">Pescado en salsa verde</h5>
+                    <p class="card-text">10,00€</p>
+                    <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out" href="#">Añadir</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <ul class="pagination">
+            <div>
+              <li><a class="prev" href="#"><i class="fa fa-angle-left"></i> Anterior</a></li>
+            </div>
+            <div>
+              <li><a class="active" href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </div>
+            <div>
+              <li><a class="next" href="#">Siguiente <i class="fa fa-angle-right"></i></a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section-form py-5" style="background-image: url(assets/images/catering/bg-form.png);">
+      <img class="miselaneo" src="assets/images/menu/img-form.png" alt="Miselaneo">
+      <div class="container">
+        <h2 class="text-blue">¿Quieres un catering a medida?</h2>
+        <form class="">
+          <div class="row">
+            <div class="col-12 col-md-6 mt-3">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Nombre y Apellidos" required="">
+            </div>
+            <div class="col-12 col-md-6 mt-3">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="">
+            </div>
+            <div class="col-12 col-md-6 mt-3">
+              <input type="text" class="form-control" name="comensales" id="comensales" placeholder="Número de comensales" required="">
+            </div>
+            <div class="col-12 col-md-6 mt-3">
+              <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Teléfono de contacto" required="">
+            </div>
+            <div class="col-12 mt-3">
+              <textarea class="form-control" name="observaciones" id="observaciones" placeholder="Observaciones" rows="5" required=""></textarea>
+            </div>
+            <div class="col-12">
+              <small class="text-light">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae consequuntur quo nihil magni fuga perspiciatis eos? Nisi, rerum recusandae quos reiciendis exercitationem quia! Praesentium sint non cum dolorem facere odio blanditiis nobis. Quidem nisi cumque quae, atque saepe, blanditiis nobis iure at explicabo quisquam minus sunt odit ullam, ipsum magnam cum sapiente earum optio ipsa exercitationem dolorum delectus qui reprehenderit.
+              </small>
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-9 mt-3">
+              <a type="submit" class="btn btn-custom btn-rounded btn-blue-white btn-center-out w-100 pe-5 ps-5" href="#"">Enviar</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+ 
+    <div class="section-footer1 py-5">
+      <div class="container">
+        <div class="content-footer row mx-auto">
+          <div class="col-12 col-md-34">
+            <h5>Contacto</h5>
+            <ul>
+              <li>
+                <p class="mb-0">
+                  Av. Pintor Felo Monzón 38, local 8 Siete Palmas, Las Palmas de Gran Canaria
+                </p>
+              </li>
+              <li>
+                <p class="mb-0">
+                  Teléfono: <a href="tel:+34645742697" class="items-menu">+34 645 742 697</a>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0">
+                  Email: <a href="mailto:info@medialunacatering.es" class="items-menu">info@medialunacatering.es</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-22">
+            <h5>Servicios</h5>
+            <ul>
+              <li>
+                <a href="menu.html" class="items-menu">Menú</a>
+              </li>
+              <li>
+                <a href="catering.html" class="items-menu">Catering</a>
+              </li>
+              <li>
+                <a href="tienda.html" class="items-menu">Tienda</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-22">
+            <h5>Legal</h5>
+            <ul>
+              <li>
+                <a href="#" class="items-menu">Cookies</a>
+              </li>
+              <li>
+                <a href="#" class="items-menu">Privacidad</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-22">
+            <h5>Nuestras Redes</h5>
+            <div id="redes">
+              <a class="me-2" href="https://www.instagram.com/lacocinademedialuna/?hl=es" target="_blank">
+                <div class="red ig">
+                  <img src="assets/images/icons/instagram.svg" alt="instagram">
+                </div>
+              </a>
+              <a class="me-2" href="https://es-es.facebook.com/lacocinademedialuna/" target="_blank">
+                <div class="red fb">
+                  <img src="assets/images/icons/facebook.svg" alt="facebook">
+                </div>
+              </a>
+              <a class="me-2" href="https://www.tripadvisor.es/Restaurant_Review-g187472-d15617001-Reviews-La_Cocina_de_Medialuna-Las_Palmas_de_Gran_Canaria_Gran_Canaria_Canary_Islands.html" target="_blank">
+                <div class="red ta">
+                  <img src="assets/images/icons/tripadvisor.svg" alt="tripadvisor">
+                </div>
+              </a>
+              <a class="me-2" href="https://www.just-eat.es/restaurants-la-cocina-de-medialuna-palmas-de-gran-canaria-las/menu/?gclid=CjwKCAjwuvmHBhAxEiwAWAYj-LBHOUQYSgi-i86QPa0xmXMjvY8yduGsiUPMA_G7Qlp2ar5UcIjqWhoC0AsQAvD_BwE&gclsrc=aw.ds" target="_blank">
+                <div class="red go">
+                  <img src="assets/images/icons/google.svg" alt="Google">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-footer2">
+      <div class="text-center">
+        <img class="img-fluid" src="assets/images/icons/pago1.png" alt="dish">
+        <img class="img-fluid" src="assets/images/icons/pago2.png" alt="dish">
+        <img class="img-fluid" src="assets/images/icons/pago3.png" alt="dish">
+        <img class="img-fluid" src="assets/images/icons/pago4.png" alt="dish">
+      </div>
+    </div>
+    <div class="section-footer3">
+      <div class="container d-flex align-items-center justify-content-between">
+        <small>
+          <p class="mb-0">
+            &copy; 2021 La Cocina de Medialuna SL Todos los derechos reservados  
+          </p>
+        </small>
+        <small>
+          <p class="mb-0">
+            Web diseñada por <a href="https://www.volcanstudio.com/" target="_blank">Volcán Studio</a>
+          </p>
+        </small>
+      </div>
+    </div>
+    <div id="shopping-cart">
+      <div class="cart-header">
+        <p>Tu bolsa de compra</p>
+        <a id="close-shopping-cart"><i class="fa fa-times"></i></a>
+      </div>
+      <div id="cart-scroll" class="cart-scroll">
+        <div class="cart-content">
+          <div class="card mb-2">
+            <div class="row">
+              <div class="col-5 pe-0">
+                <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+              </div>
+              <div class="col-7 ps-0">
+                <a href="#"><i class="fa fa-trash"></i></a>
+                <div class="card-body">
+                  <h5 class="card-title m-0">Pescado en salsa verde</h5>
+                  <p class="card-text">10,00€</p>
+                  <div class="content-cantidad">
+                    <button id="menos">
+                      <span class="fa fa-minus"></span>
+                    </button>
+                    <input class="cantidad" type="number" name="cantidad" id="cantidad" min="1" max="100" step="1" value="1">
+                    <button id="mas">
+                      <span class="fa fa-plus"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="row">
+              <div class="col-5 pe-0">
+                <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+              </div>
+              <div class="col-7 ps-0">
+                <a href="#"><i class="fa fa-trash"></i></a>
+                <div class="card-body">
+                  <h5 class="card-title m-0">Pescado en salsa verde</h5>
+                  <p class="card-text">10,00€</p>
+                  <div class="content-cantidad">
+                    <button id="menos">
+                      <span class="fa fa-minus"></span>
+                    </button>
+                    <input class="cantidad" type="number" name="cantidad" id="cantidad" min="1" max="100" step="1" value="1">
+                    <button id="mas">
+                      <span class="fa fa-plus"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p>Te sugerimos</p>
+        <div id="cart-sugeridos" class="cart-sugeridos">
+          <div class="card">
+            <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+            <div class="card-body">
+              <h5 class="card-title m-0">Pescado en salsa verde</h5>
+              <p class="card-text">10,00€</p>
+              <a href="#">añadir</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+            <div class="card-body">
+              <h5 class="card-title m-0">Pescado en salsa verde</h5>
+              <p class="card-text">10,00€</p>
+              <a href="#">añadir</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+            <div class="card-body">
+              <h5 class="card-title m-0">Pescado en salsa verde</h5>
+              <p class="card-text">10,00€</p>
+              <a href="#">añadir</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+            <div class="card-body">
+              <h5 class="card-title m-0">Pescado en salsa verde</h5>
+              <p class="card-text">10,00€</p>
+              <a href="#">añadir</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/home/plato.png" class="card-img-top" alt="plato">
+            <div class="card-body">
+              <h5 class="card-title m-0">Pescado en salsa verde</h5>
+              <p class="card-text">10,00€</p>
+              <a href="#">añadir</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="cart-total">
+          <p>Total: 10,00&euro;</p>
+          <a class="btn btn-custom btn-rounded btn-blue-white btn-center-out px-5" href="#">finalizar compra</a>
+        </div>
+      </div>
+    </div>
+    <div id="modal-suscribe" class="modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="row m-0">
+            <div class="img-suscribe col-5">
+            </div>
+            <div class="content-suscribe col-7">
+              <div class="modal-header pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-times"></i>
+                </button>
+              </div>
+              <div class="modal-body text-center pt-0">
+                <h2 class="title">¡No te lo pierdas!</h2>
+                <h5 class="subtitle">recibe cada lunes<br>nuestro menú semanal</h5>
+                <form class="w-75 mx-auto">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre">
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="email">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="telefono" name="telefono" placeholder="teléfono de contacto">
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      He leído y acepto la <a href="legal.html">política de privacidad</a>
+                    </label>
+                  </div>
+                </form>
+                <a type="submit" class="btn btn-custom btn-rounded btn-blue-white btn-center-out px-5" href="#">suscribirme</a>
+                <p class="small text-start mt-3">
+                  En cumplimiento de lo establecido en el RGPD y la LOPD-GDD, le informamos de que los datos personales recabados por La Cocina de Medialuna mediante este formulario quedarán incorporados y serán tratados en nuestro ficheros con el fin de poder realizar nuestros servicios, así como informarle en el futuro sobre ellos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <script src="assets/libs/jquery/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+  <script src="assets/libs/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  <script src="assets/libs/slick-slider/slick/slick.min.js"></script>
+  <script src="assets/libs/wowjs/wow.min.js"></script>
+  <!-- <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script> -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    })
+    wow.init();
+  </script>
+</body>
+</html>

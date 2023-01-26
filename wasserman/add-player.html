@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.min.css">
+  <title>Wasserman</title>
+
+  <link rel="stylesheet" href="assets/css/add-player.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css" integrity="sha512-mR/b5Y7FRsKqrYZou7uysnOdCIJib/7r5QeJMFvLNHNhtye3xJp1TdJVPLtetkukFn227nKpXD9OjUc09lx97Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+</head>
+
+<body class="body-player">
+  <div class="menu">
+    <button id="open">
+      <img src="assets/images/menu.png" alt="menu">
+      <div class="notificacion-icon">
+        <span>2</span>
+      </div>
+    </button>
+    <img class="img-logo" src="assets/images/logo.png" alt="logo">
+  </div>
+
+  <div class="menu-open">
+    <div id="close" class="icon-close">
+      <img src="assets/images/close.svg" alt="close">
+    </div>
+    <div class="contenedor-menu">
+      <h1>Menu</h1>
+      <ul>
+        <li>
+          <a href="#">
+            Agent page
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Player report
+          </a>
+          <span class="notificacion">2</span>
+        </li>
+        <li>
+          <a href="#">
+            Client weekly report
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Financial
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Club request
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Cerrar Sesión
+          </a>
+        </li>
+      </ul>
+      <div class="text-center">
+        <img class="logo-menu" src="assets/images/logo-wasserman.png" alt="logo">
+      </div>
+      <div class="redes">
+        <a href="#">
+          <img src="assets/images/ln-orange.png" alt="linkedln">
+        </a>
+        <a href="#">
+          <img src="assets/images/tw-orange.png" alt="twitter">
+        </a>
+        <a href="#">
+          <img src="assets/images/ig-orange.png" alt="instagramfacebook">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="contenedor-search">
+    <div class="mb-3 search">
+      <input type="text" class="form-control input-search" placeholder="Buscar..." aria-label="Username" aria-describedby="basic-addon1">
+      <img src="assets/images/search.png" class="icon-search alt="search item">
+    </div>
+  </div>
+
+  <div class="contenedor-ppal">
+    <p class="title-player">Add player</p>
+    <div class="contenedor-input">
+      <div class="col-izq">
+        <label for="">Avatar</label>
+        <div class="fileUpload">
+          <input type="file" class="upload" />
+          <span>Select image</span>
+        </div>
+      </div>
+      <div class="col-der">
+        <label for="">Assign to</label>
+        <select class="form-select" aria-label="Default select example">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    </div>
+    <p class="title-player mt-2">Contact</p>
+    <form action="">
+      <label for="inputName" class="form-label">Name</label>
+      <input type="text" id="inputName" class="form-control">
+      <div class="form-group mb-3 row">
+        <div class="col-6 mo-b-15">
+          <label for="InputPrefijo" class="form-label">Prefijo telefónico</label><br>
+          <select class="selectpicker">
+            <option data-content="<span class='flag-icon flag-icon-es'></span><span class='number ms-2'>+34</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ar'></span><span class='number ms-2'>+54</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-bo'></span><span class='number ms-2'>+591</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-br'></span><span class='number ms-2'>+55</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-cl'></span><span class='number ms-2'>+56</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-co'></span><span class='number ms-2'>+57</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-cr'></span><span class='number ms-2'>+506</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-cu'></span><span class='number ms-2'>+53</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ec'></span><span class='number ms-2'>+593</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-sv'></span><span class='number ms-2'>+503</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-gt'></span><span class='number ms-2'>+502</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ht'></span><span class='number ms-2'>+509</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-hn'></span><span class='number ms-2'>+504</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-jm'></span><span class='number ms-2'>+1</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-mx'></span><span class='number ms-2'>+52</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ni'></span><span class='number ms-2'>+505</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-py'></span><span class='number ms-2'>+595</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-pa'></span><span class='number ms-2'>+507</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-pr'></span><span class='number ms-2'>+1</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-do'></span><span class='number ms-2'>+1</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-sr'></span><span class='number ms-2'>+597</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-uy'></span><span class='number ms-2'>+598</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ve'></span><span class='number ms-2'>+58</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-bb'></span><span class='number ms-2'>+1268</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-bs'></span><span class='number ms-2'>+1</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-bz'></span><span class='number ms-2'>+501</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ca'></span><span class='number ms-2'>+1</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-dm'></span><span class='number ms-2'>+1</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-us'></span><span class='number ms-2'>+1</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-gt'></span><span class='number ms-2'>+502</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-gy'></span><span class='number ms-2'>+592</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-pe'></span><span class='number ms-2'>+51</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-vc'></span><span class='number ms-2'>+1</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-lc'></span><span class='number ms-2'>+1</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-tt'></span><span class='number ms-2'>+1</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-uy'></span><span class='number ms-2'>+598</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-al'></span><span class='number ms-2'>+355</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-de'></span><span class='number ms-2'>+49</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ad'></span><span class='number ms-2'>+376</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-am'></span><span class='number ms-2'>+374</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-at'></span><span class='number ms-2'>+43</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-az'></span><span class='number ms-2'>+994</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-be'></span><span class='number ms-2'>+32</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-by'></span><span class='number ms-2'>+375</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ba'></span><span class='number ms-2'>+387</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-bg'></span><span class='number ms-2'>+359</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-cy'></span><span class='number ms-2'>+357</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-dk'></span><span class='number ms-2'>+45</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-sk'></span><span class='number ms-2'>+421</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-si'></span><span class='number ms-2'>+386</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ee'></span><span class='number ms-2'>+372</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-fi'></span><span class='number ms-2'>+358</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-fr'></span><span class='number ms-2'>+33</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ge'></span><span class='number ms-2'>+995</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-gr'></span><span class='number ms-2'>+30</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-hu'></span><span class='number ms-2'>+36</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ie'></span><span class='number ms-2'>+353</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ic'></span><span class='number ms-2'>+354</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-it'></span><span class='number ms-2'>+39</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-kz'></span><span class='number ms-2'>+7</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-lv'></span><span class='number ms-2'>+371</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-li'></span><span class='number ms-2'>+423</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-lt'></span><span class='number ms-2'>+370</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-lu'></span><span class='number ms-2'>+352</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-mk'></span><span class='number ms-2'>+389</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-mt'></span><span class='number ms-2'>+356</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-md'></span><span class='number ms-2'>+373</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-mc'></span><span class='number ms-2'>+377</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-me'></span><span class='number ms-2'>+382</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-no'></span><span class='number ms-2'>+47</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-nl'></span><span class='number ms-2'>+31</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-pl'></span><span class='number ms-2'>+48</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-pt'></span><span class='number ms-2'>+351</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-gb'></span><span class='number ms-2'>+44</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-cz'></span><span class='number ms-2'>+420</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ro'></span><span class='number ms-2'>+40</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ru'></span><span class='number ms-2'>+7</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-sm'></span><span class='number ms-2'>+378</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-rs'></span><span class='number ms-2'>+381</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-se'></span><span class='number ms-2'>+46</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ch'></span><span class='number ms-2'>+41</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-tr'></span><span class='number ms-2'>+90</span>"></option>
+            <option data-content="<span class='flag-icon flag-icon-ua'></span><span class='number ms-2'>+380</span>"></option>
+          </select>
+          
+        </div> 
+        <div class="col-6">
+          <label for="InputTelef" class="form-label">N° de teléfono</label>
+          <input class="form-control" type="text" id="InputTelef"> 
+        </div>                                                   
+      </div>
+    </form>
+    <p class="title-player mt-2">Level</p>
+    <div class="contenedor-level">
+      <label class="checkeable">
+        <input type="radio" name="cap1"/>
+        <div class="level">
+          <span>SENIOR</span>
+        </div>
+      </label>
+      <label class="checkeable me-2 ms-2">
+        <input type="radio" name="cap1"/>
+        <div class="level">
+          <span>U12</span>
+        </div>
+      </label>
+      <label class="checkeable">
+        <input type="radio" name="cap1"/>
+        <div class="level">
+          <span>U12</span>
+        </div>
+      </label>
+      <label class="checkeable">
+        <input type="radio" name="cap1"/>
+        <div class="level">
+          <span>U12</span>
+        </div>
+      </label>
+      <label class="checkeable me-2 ms-2">
+        <input type="radio" name="cap1"/>
+        <div class="level">
+          <span>U12</span>
+        </div>
+      </label>
+      <label class="checkeable">
+        <input type="radio" name="cap1"/>
+        <div class="level">
+          <span>U12</span>
+        </div>
+      </label>
+    </div>
+  </div>
+  <div class="botones">
+    <button type="button" class="btn btn-back me-2">
+      <a href="#">
+        <img src="assets/images/arrow-left.svg" alt="arrow-left">
+        <span>Back</span>
+      </a>
+    </button>
+    <button type="button" class="btn btn-add ms-2">
+      <img src="assets/images/check.svg" alt="check">
+      <span>Add</span>
+    </button>
+  </div>
+  <nav>
+    <ul>
+      <li class="list-bar">
+        <a href="#">
+          <img src="assets/images/calendar.png" alt="calendar">
+          <p>Calendar</p>
+        </a>
+      </li>
+      <li class="list-bar">
+        <a href="#" class="active">
+          <img src="assets/images/task.png" alt="task">
+          <p>Task</p>
+        </a>
+      </li>
+      <li class="list-bar">
+        <a href="#">
+          <img src="assets/images/notes.png" alt="notes">
+          <p>Notes</p>
+        </a>
+      </li>
+      <li class="list-bar">
+        <a href="#">
+          <img src="assets/images/user-footer.png" alt="user">
+          <p>Contacts</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <script src="assets/libs/jquery/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js" integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+<script src="assets/js/main.js"></script>
+</html>

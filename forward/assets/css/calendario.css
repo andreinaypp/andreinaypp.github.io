@@ -1,0 +1,68 @@
+body {
+  background: url(../images/bg-calendar.png) no-repeat;
+  background-size: cover;
+  overflow-y: auto;
+  color: white;
+  height: calc(100vh - 130px); }
+  @media (min-width: 500px) and (max-width: 767.98px) {
+    body {
+      height: auto; } }
+  @media (min-width: 800px) and (max-width: 829.98px) {
+    body {
+      height: auto; } }
+  body .icon-chevron {
+    display: block;
+    width: 15px;
+    height: 22px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAWCAMAAAAo0TYrAAAAElBMVEX///8AAAAAAAAAAAAAAAAAAABknMCaAAAABXRSTlMAEHCg0O5XV0MAAAAzSURBVHgBYwACJkYGZMDMysKIwmUFCyC4KAIsrKgCjPQQQPCpzUX4B9O/mOGBGV7o4QkA5zcCv3HiEZgAAAAASUVORK5CYII=); }
+  body .icon-chevron-rotate {
+    transform: rotate(180deg); }
+  body .page {
+    width: 90%;
+    height: calc(80vh - 130px);
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 60px; }
+  body .responsive-calendar-modal {
+    background-color: #1d86c8;
+    color: white;
+    padding: 1em; }
+  body .responsive-calendar .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  body .responsive-calendar .controls a {
+    cursor: pointer;
+    color: red; }
+  body .responsive-calendar .controls p {
+    cursor: pointer;
+    color: #fff;
+    font-size: .8rem;
+    margin-bottom: 0; }
+  body .responsive-calendar .controls h4 {
+    display: inline;
+    margin-bottom: 0; }
+  body .responsive-calendar .day-headers,
+  body .responsive-calendar .days {
+    font-size: 0; }
+  body .responsive-calendar .day {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    width: 14.285714285714286%;
+    text-align: center; }
+  body .responsive-calendar .day a {
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    padding: 20% 0 20% 0; }
+  body .responsive-calendar .day a:hover {
+    background-color: #eee;
+    text-decoration: none; }
+  body .responsive-calendar .day.not-current a {
+    color: transparent; }
+  body .responsive-calendar .day .badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 1; }

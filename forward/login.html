@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.min.css">
+  <title>Forward - Personal Training</title>
+
+  <link rel="stylesheet" href="assets/css/login.min.css">
+</head>
+
+<body class="body-login">
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-12 logo">
+          <img src="assets/images/logo.png" alt="logo">
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="row">
+        <div class="col-12 col-md-8 form-login">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control username" placeholder="Usuario">
+            </div>
+            <div class="mb-3 input-pass">
+              <input id="password" type="password" class="form-control password" placeholder="Contraseña">
+              <button id="hide" type="button" class="eyes-hide">
+                <img src="assets/images/login/hide-password.png" alt="oculto">
+              </button>
+              <button id="show" type="button" class="eyes-show">
+                <img src="assets/images/login/visual-password.png" alt="mostrar">
+              </button>
+            </div>
+            <button type="submit" class="btn button">Login</button>
+          </form>
+        </div>
+        <div class="col-12 sing-up">
+          <span>¿Todavia no tienes cuenta?</span><a href="#">Registrate ahora</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <div class="col-12 social">
+          <a href="#">
+            <img src="assets/images/tw.png" alt="twitter">
+          </a>
+          <a href="#">
+            <img src="assets/images/yt.png" alt="youtube">
+          </a>
+          <a href="#">
+            <img src="assets/images/fb.png" alt="facebook">
+          </a>
+          <a href="#">
+            <img src="assets/images/ig.png" alt="instagam">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script>
+  window.addEventListener('load', () =>  {
+    let hide = document.querySelector("#hide");
+    let show = document.querySelector("#show");
+    let password = document.querySelector("#password");
+  
+    show.addEventListener("click", () => {
+      password.setAttribute("type", "text");
+      hide.style.display = "block";
+      show.style.display = "none";
+    });
+  
+    hide.addEventListener("click", () => {
+      password.setAttribute("type", "password");
+      hide.style.display = "none";
+      show.style.display = "block";
+    });
+  });
+</script>
+</html>

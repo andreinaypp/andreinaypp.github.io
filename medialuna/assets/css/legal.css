@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.section-welcome-legal {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../images/legal/bg-welcome.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+  .section-welcome-legal p {
+    font-size: 4rem;
+    color: #4f4f4f;
+    font-weight: 100;
+    margin-bottom: 4rem;
+    text-align: center; }
+
+.section-content {
+  background-image: url(../images/legal/bg-content.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain; }
+  .section-content h4 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #bdbdbd;
+    margin-top: 3rem; }
+  .section-content p {
+    font-family: 'Open Sans';
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #000; }
